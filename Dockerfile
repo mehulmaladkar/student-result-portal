@@ -2,7 +2,7 @@ FROM tomcat:9-jdk17
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY dist/Web_Application.war /usr/local/tomcat/webapps/ROOT.war
+COPY Web_Application/dist/Web_Application.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
